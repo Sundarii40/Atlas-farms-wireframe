@@ -6,7 +6,12 @@ body {
 nav{
     border: 1px solid black;
 }
-
+.flex-inline {
+    display: flex;
+}
+img {
+    width: 400px;
+}
 
 nav ul{
     list-style: none;
@@ -22,6 +27,20 @@ font-weight: bold;
 font-size: 24px;
 }
 
-a.selected {
+li.selected a {
 text-decoration: underline;
+color: blueviolet;
+}
+
+.flex-example {
+    display: flex;
+    flex-wrap:wrap;
+    border: 1px solid black;;
+
+}
+
+.flex-example p {
+    flex-grow: 1;
+    border: 1px solid purple;
+    width: 600px;
 }

@@ -1,10 +1,15 @@
 ---
 navPages:
-    - title: home
+    - title: Home
       url: /index.html
-
-    - title: Newsletter
-      url: /newsletter
+    - title: Store
+      url: /store
+    - title: Connect
+      url: /connect
+    -title: Wholesale
+      url: /wholesale
+    -title: Photos
+      url: /photos 
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -19,16 +24,15 @@ navPages:
     <header>
         <nav>
             <ul>
-            {%- for entry in navPages %}
-            <li {% if entry.title == name %} class="selected" {% endif %} >
-            <a href="{{ entry.url }}">{{ entry.title }}</a>
-            </li>
-            {%- endfor %}
+                {%- for entry in navPages %}
+                <li {% if entry.title == name %} class="selected" {% endif %} >
+                <a href="{{ entry.url }}">{{ entry.title }}</a>
+                </li>
+                {%- endfor %}
             </ul>
         </nav>
     </header>
     <main>
-        hello
      {{content}}
     </main>
 </body>
