@@ -2,10 +2,14 @@
   @import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Inter:wght@400;700&family=Raleway:wght@400;700&family=Sanchez&display=swap');
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, Sanchez;
     margin: 1em;
 }
-nav{
+nav{@property --logo-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #c0ffee;
+  }
     border: 1px solid black;
 }
 .flex-inline {
@@ -55,7 +59,7 @@ body {
     padding: 0.5em 1em;
     background: #333;
     border: none;
-    font-family: sans-serif;
+    font-family: Sanchez;
     font-weight: bold;
     text-align: center;
     color: #F1A638;
@@ -64,16 +68,16 @@ body {
 
   .hero-image {
     background-image: url("/Images/Home-image1.jpg");
-    background-position: center;  
-      background-repeat: no-repeat;  
-      background-size: cover;
-      height: 70vh;
-      display: flex;
+    background-position: center;  
+    background-repeat: no-repeat;  
+    background-size: cover;
+    height: 70vh;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    color: white;
-    font-family: sans-serif;
+    color: var(--black);
+    font-family: Sanchez;
   }
   .side-by-side {
     font-family: Sanchez;
@@ -81,4 +85,25 @@ body {
     flex-direction: row;
     gap: 2em;
     width: 1200px;
-  }
+}
+
+body {
+--highlight-color: #F1A638;
+--background-color: #dcd4d4;
+--black: #000000;
+}
+main {
+margin-bottom: 100px;
+}
+footer {
+    background: var(--background-color);
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    }
