@@ -2,7 +2,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Inter:wght@400;700&family=Raleway:wght@400;700&family=Sanchez&display=swap');
 
 body {
-    font-family: Arial, Helvetica, Sanchez;
+    font-family: Sanchez, Arial, Helvetica;
     margin: 1em;
 }
 nav{@property --logo-color {
@@ -15,8 +15,29 @@ nav{@property --logo-color {
 .flex-inline {
     display: flex;
 }
-img {
+.spreadout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.job-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.job-list div {
+max-width: 800px;
+}
+.spreadout div {
+    max-width: 600px;
+    }
+.photos img {
+    
+    height: 400px;
     width: 400px;
+    object-fit: cover;
 }
 
 nav ul{
@@ -77,10 +98,9 @@ body {
     justify-content: flex-start;
     align-items: center;
     color: var(--black);
-    font-family: Sanchez;
+    
   }
   .side-by-side {
-    font-family: Sanchez;
     display: flex;
     flex-direction: row;
     gap: 2em;
