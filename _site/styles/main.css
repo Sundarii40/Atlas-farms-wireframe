@@ -75,3 +75,10 @@ body {
     color: white;
     font-family: sans-serif;
   }
+  .side-by-side {
+    font-family: Sanchez;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    width: 1200px;
+  }
