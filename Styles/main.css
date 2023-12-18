@@ -35,8 +35,8 @@ max-width: 800px;
     }
 .photos img {
     
-    height: 400px;
-    width: 400px;
+    height: 200px;
+    width: 200px;
     object-fit: cover;
 }
 
@@ -106,6 +106,9 @@ body {
     gap: 2em;
     width: 1200px;
 }
+.side-by-side img {
+   width: 600px; 
+}
 
 body {
 --highlight-color: #F1A638;
@@ -126,4 +129,14 @@ footer {
     align-items: center;
     margin: 0px;
     padding: 0px;
+    text-align: center;
+    }
+    footer section div {
+        display: flex;
+    }
+    footer section div p {
+        margin: 5px;
+    }
+    .page-title {
+        text-align: center;
     }
