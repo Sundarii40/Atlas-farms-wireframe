@@ -39,12 +39,31 @@ max-width: 800px;
     width: 200px;
     object-fit: cover;
 }
-
+img.medium{
+    width: 790px;
+}
+.flex-vertical{
+    display: flex;
+    flex-direction: column;
+}
+button{
+    max-width: 250px;
+    width: 250px;
+    height: 40px;
+}
+.job-list{
+    max-width: 500px;
+    text-align: center;
+}
 nav ul{
+    
     list-style: none;
     display: flex;
     justify-content: flex-start;
     gap: 4em;
+}
+nav {
+    background-color: #F1A638;
 }
 
 nav ul li a {
@@ -56,7 +75,7 @@ font-size: 24px;
 
 li.selected a {
 text-decoration: underline;
-color: blueviolet;
+color: #fff;
 }
 
 .flex-example {
@@ -115,6 +134,7 @@ body {
 --background-color: #dcd4d4;
 --black: #000000;
 }
+
 main {
 margin-bottom: 100px;
 }
@@ -130,13 +150,16 @@ footer {
     margin: 0px;
     padding: 0px;
     text-align: center;
-    }
-    footer section div {
-        display: flex;
-    }
-    footer section div p {
-        margin: 5px;
-    }
-    .page-title {
-        text-align: center;
-    }
+}
+footer section div {
+    display: flex;
+}
+footer section div p {
+    margin: 5px;
+}
+.page-title {
+    text-align: center;
+}
+
+    
+    
